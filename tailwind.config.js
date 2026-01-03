@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,7 +9,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#DC2626", // Red accent for "ai"
+          DEFAULT: "#DC2626",
           dark: "#B91C1C",
         },
         gold: {
@@ -33,5 +32,3 @@ const config: Config = {
   },
   plugins: [],
 };
-
-export default config;
