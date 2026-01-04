@@ -229,7 +229,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="flex items-center gap-8 text-sm"
+              className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 text-sm"
             >
               <div className="flex items-center gap-2">
                 <Users className="w-5 h-5 text-primary" />
@@ -237,7 +237,7 @@ export default function Hero() {
                   <strong className="text-neutral-800 font-semibold">50+</strong> businesses automated
                 </span>
               </div>
-              <div className="h-8 w-px bg-neutral-300" />
+              <div className="hidden sm:block h-8 w-px bg-neutral-300" />
               <div className="text-neutral-600">
                 <strong className="text-neutral-800 font-semibold">60-second</strong> response times
               </div>
