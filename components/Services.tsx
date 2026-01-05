@@ -13,7 +13,8 @@ export default function Services() {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.12,
+        delayChildren: 0.1,
       },
     },
   };
@@ -23,6 +24,10 @@ export default function Services() {
     visible: {
       opacity: 1,
       y: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.4, 0, 0.2, 1],
+      },
     },
   };
 
@@ -40,7 +45,7 @@ export default function Services() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 mb-4 tracking-tight">
@@ -69,8 +74,8 @@ export default function Services() {
                 >
                   <motion.div
                     whileHover={{
-                      y: -8,
-                      transition: { duration: 0.2 },
+                      y: -4,
+                      transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] },
                     }}
                     className={`
                       card-elevated p-8 h-full
@@ -81,7 +86,10 @@ export default function Services() {
                     `}
                   >
                 {/* Icon with gradient background */}
-                <div className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                <div
+                  className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-6 group-hover:scale-105 transition-all duration-300 ease-out`}
+                  style={{ transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)' }}
+                >
                   <Icon className="w-9 h-9 text-primary stroke-[2]" />
                 </div>
 
@@ -98,7 +106,7 @@ export default function Services() {
                 {/* Hover indicator */}
                 <div className="mt-6 flex items-center text-primary opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <span className="text-sm font-semibold">Learn more</span>
-                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300 ease-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </div>
@@ -113,7 +121,7 @@ export default function Services() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.8 }}
+          transition={{ delay: 0.6, duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
           className="text-center"
         >
           <div className="inline-block p-8 bg-white rounded-2xl shadow-lg">

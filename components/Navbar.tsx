@@ -32,11 +32,15 @@ export default function Navbar() {
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        transition={{ duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
+        className={`fixed top-0 left-0 right-0 z-50 ${
           isScrolled
             ? "bg-white/95 backdrop-blur-md shadow-md"
             : "bg-white/80 backdrop-blur-sm"
         }`}
+        style={{
+          transition: 'background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+        }}
       >
         <div className="section-container">
           <div className="flex justify-between items-center h-20">
@@ -111,7 +115,7 @@ export default function Navbar() {
               initial={{ x: "100%" }}
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
-              transition={{ type: "spring", damping: 25, stiffness: 200 }}
+              transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
               className="fixed top-0 right-0 bottom-0 w-64 bg-white shadow-2xl z-50 md:hidden"
             >
               <div className="px-6 py-6 pt-20 flex flex-col space-y-4">

@@ -17,8 +17,8 @@ export default function ContactForm() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
           className="text-center mb-12"
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 mb-4 tracking-tight">
@@ -33,8 +33,8 @@ export default function ContactForm() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.7, delay: 0.15, ease: [0.4, 0, 0.2, 1] }}
           className="bg-white p-4 sm:p-8 rounded-2xl shadow-2xl border border-neutral-200"
         >
           <div className="w-full" style={{ minHeight: '640px' }}>

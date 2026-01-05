@@ -181,14 +181,14 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
             className="max-w-2xl"
           >
             {/* Eyebrow */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
+              transition={{ delay: 0.15, duration: 0.5, ease: [0.4, 0, 0.2, 1] }}
               className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-semibold mb-6"
             >
               <Zap className="w-4 h-4" />
@@ -213,7 +213,7 @@ export default function Hero() {
                 className="btn-secondary group inline-flex items-center justify-center gap-2 text-lg"
               >
                 Book a Free Strategy Call
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300 ease-out" />
               </Link>
 
               <Link
@@ -228,7 +228,7 @@ export default function Hero() {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
+              transition={{ delay: 0.5, duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
               className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8 text-sm"
             >
               <div className="flex items-center gap-2">
@@ -248,7 +248,7 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.7, delay: 0.2, ease: [0.4, 0, 0.2, 1] }}
             className="hidden lg:block"
           >
             <AutomationGraphic />
@@ -259,7 +259,7 @@ export default function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8 }}
+          transition={{ delay: 0.7, duration: 0.6, ease: [0.4, 0, 0.2, 1] }}
           className="mt-24 text-center"
         >
           <p className="text-2xl sm:text-3xl font-semibold">

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mainline Automations - Logo Options</title>
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 40px 20px;
+      margin: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: white;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      text-align: center;
+      color: rgba(255,255,255,0.9);
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+    }
+    .logos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .logo-option {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .logo-option:hover {
+      transform: translateY(-5px);
+    }
+    .logo-title {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .logo-description {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .logo-display {
+      background: #f9fafb;
+      border-radius: 12px;
+      padding: 40px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo-display img {
+      max-width: 200px;
+      height: auto;
+    }
+    .backgrounds {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 15px;
+    }
+    .bg-preview {
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .bg-preview img {
+      max-width: 80px;
+      height: auto;
+    }
+    .bg-light { background: #ffffff; }
+    .bg-dark { background: #1f2937; }
+    .bg-color { background: linear-gradient(135deg, #E63946 0%, #F4A261 100%); }
+    .bg-label {
+      font-size: 0.7rem;
+      color: #666;
+      margin-top: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .bg-dark .bg-label { color: #9ca3af; }
+    .bg-color .bg-label { color: white; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mainline Automations Logo Options</h1>
+    <p class="subtitle">Choose your favorite concept below</p>
+
+    <div class="logos">
+      <!-- Option A -->
+      <div class="logo-option">
+        <div class="logo-title">Option A: Circuit Network</div>
+        <div class="logo-description">
+          Modern network nodes forming an "M" shape. Represents interconnected automation and AI coordination.
+        </div>
+        <div class="logo-display">
+          <img src="/logo-option-a.svg" alt="Logo Option A">
+        </div>
+        <div class="backgrounds">
+          <div class="bg-preview bg-light">
+            <img src="/logo-option-a.svg" alt="Option A Light">
+            <div class="bg-label">Light</div>
+          </div>
+          <div class="bg-preview bg-dark">
+            <img src="/logo-option-a.svg" alt="Option A Dark">
+            <div class="bg-label">Dark</div>
+          </div>
+          <div class="bg-preview bg-color">
+            <img src="/logo-option-a.svg" alt="Option A Color">
+            <div class="bg-label">Branded</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Option B -->
+      <div class="logo-option">
+        <div class="logo-title">Option B: Flow Lettermark</div>
+        <div class="logo-description">
+          Stylized "M" with flow arrows. Clean, geometric, and represents automation workflows.
+        </div>
+        <div class="logo-display">
+          <img src="/logo-option-b.svg" alt="Logo Option B">
+        </div>
+        <div class="backgrounds">
+          <div class="bg-preview bg-light">
+            <img src="/logo-option-b.svg" alt="Option B Light">
+            <div class="bg-label">Light</div>
+          </div>
+          <div class="bg-preview bg-dark">
+            <img src="/logo-option-b.svg" alt="Option B Dark">
+            <div class="bg-label">Dark</div>
+          </div>
+          <div class="bg-preview bg-color">
+            <img src="/logo-option-b.svg" alt="Option B Color">
+            <div class="bg-label">Branded</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Option C -->
+      <div class="logo-option">
+        <div class="logo-title">Option C: Professional Badge</div>
+        <div class="logo-description">
+          Circular badge with automation nodes. Professional service business feel with tech elements.
+        </div>
+        <div class="logo-display">
+          <img src="/logo-option-c.svg" alt="Logo Option C">
+        </div>
+        <div class="backgrounds">
+          <div class="bg-preview bg-light">
+            <img src="/logo-option-c.svg" alt="Option C Light">
+            <div class="bg-label">Light</div>
+          </div>
+          <div class="bg-preview bg-dark">
+            <img src="/logo-option-c.svg" alt="Option C Dark">
+            <div class="bg-label">Dark</div>
+          </div>
+          <div class="bg-preview bg-color">
+            <img src="/logo-option-c.svg" alt="Option C Color">
+            <div class="bg-label">Branded</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; color: white; margin-top: 40px;">
+      <p style="font-size: 1.1rem;">All logos use your brand colors:</p>
+      <div style="display: inline-flex; gap: 20px; margin-top: 10px;">
+        <div>
+          <div style="width: 60px; height: 60px; background: #E63946; border-radius: 8px; margin: 0 auto;"></div>
+          <p style="margin-top: 8px; font-size: 0.9rem;">Primary Red</p>
+        </div>
+        <div>
+          <div style="width: 60px; height: 60px; background: #F4A261; border-radius: 8px; margin: 0 auto;"></div>
+          <p style="margin-top: 8px; font-size: 0.9rem;">Gold</p>
+        </div>
+        <div>
+          <div style="width: 60px; height: 60px; background: #457B9D; border-radius: 8px; margin: 0 auto;"></div>
+          <p style="margin-top: 8px; font-size: 0.9rem;">Accent Blue</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

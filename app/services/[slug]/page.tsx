@@ -38,14 +38,14 @@ export default function ServiceDetailPage() {
               href="/services"
               className="inline-flex items-center gap-2 text-neutral-600 hover:text-primary transition-colors mb-8 group"
             >
-              <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+              <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-300 ease-out" />
               <span className="text-sm font-medium">Back to Services</span>
             </Link>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
               className="flex flex-col md:flex-row items-start md:items-center gap-6"
             >
               {/* Icon */}
@@ -69,7 +69,7 @@ export default function ServiceDetailPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.7, delay: 0.15, ease: [0.4, 0, 0.2, 1] }}
               className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6"
             >
               {service.stats.map((stat, index) => (
@@ -96,8 +96,8 @@ export default function ServiceDetailPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
             >
               <p className="text-lg text-neutral-700 leading-relaxed">
                 {service.longDescription}
@@ -108,8 +108,8 @@ export default function ServiceDetailPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-8">
                 How It Works
@@ -140,8 +140,8 @@ export default function ServiceDetailPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
               className="bg-gradient-to-br from-neutral-100 to-neutral-50 p-8 sm:p-12 rounded-2xl"
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-8">
@@ -163,8 +163,8 @@ export default function ServiceDetailPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
                 See It In Action
@@ -218,8 +218,8 @@ export default function ServiceDetailPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
               className="bg-gradient-to-br from-gold/10 to-primary/10 p-8 sm:p-12 rounded-2xl text-center border-2 border-gold/20"
             >
               <MessageSquare className="w-16 h-16 text-primary mx-auto mb-6" />
@@ -255,8 +255,8 @@ export default function ServiceDetailPage() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
               >
                 <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-8">
                   Other Services
@@ -272,7 +272,8 @@ export default function ServiceDetailPage() {
                       >
                         <div className="card-elevated p-6 h-full hover:border hover:border-primary/20 transition-all duration-300">
                           <div
-                            className={`w-12 h-12 bg-gradient-to-br ${relatedService.gradient} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
+                            className={`w-12 h-12 bg-gradient-to-br ${relatedService.gradient} rounded-lg flex items-center justify-center mb-4 group-hover:scale-105 transition-all duration-300`}
+                            style={{ transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)' }}
                           >
                             <RelatedIcon className="w-6 h-6 text-primary stroke-[2]" />
                           </div>

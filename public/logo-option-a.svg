@@ -1,0 +1,31 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Option A: Circuit/Network Icon -->
+  <!-- Central hub -->
+  <circle cx="100" cy="100" r="18" fill="#E63946"/>
+
+  <!-- Connection nodes forming an M shape -->
+  <!-- Left node -->
+  <circle cx="50" cy="140" r="12" fill="#F4A261"/>
+  <line x1="82" y1="106" x2="58" y2="132" stroke="#E63946" stroke-width="3" opacity="0.8"/>
+
+  <!-- Left-center node -->
+  <circle cx="75" cy="60" r="12" fill="#F4A261"/>
+  <line x1="90" y1="88" x2="80" y2="70" stroke="#E63946" stroke-width="3" opacity="0.8"/>
+
+  <!-- Right-center node -->
+  <circle cx="125" cy="60" r="12" fill="#F4A261"/>
+  <line x1="110" y1="88" x2="120" y2="70" stroke="#E63946" stroke-width="3" opacity="0.8"/>
+
+  <!-- Right node -->
+  <circle cx="150" cy="140" r="12" fill="#F4A261"/>
+  <line x1="118" y1="106" x2="142" y2="132" stroke="#E63946" stroke-width="3" opacity="0.8"/>
+
+  <!-- Additional connection lines for circuit feel -->
+  <line x1="50" y1="140" x2="75" y2="60" stroke="#E63946" stroke-width="2" opacity="0.3"/>
+  <line x1="150" y1="140" x2="125" y2="60" stroke="#E63946" stroke-width="2" opacity="0.3"/>
+
+  <!-- Small accent dots for tech feel -->
+  <circle cx="100" cy="50" r="4" fill="#457B9D" opacity="0.6"/>
+  <circle cx="60" cy="100" r="4" fill="#457B9D" opacity="0.6"/>
+  <circle cx="140" cy="100" r="4" fill="#457B9D" opacity="0.6"/>
+</svg>

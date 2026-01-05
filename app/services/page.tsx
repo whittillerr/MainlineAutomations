@@ -12,8 +12,8 @@ export default function ServicesPage() {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.1,
+        staggerChildren: 0.12,
+        delayChildren: 0.15,
       },
     },
   };
@@ -23,6 +23,10 @@ export default function ServicesPage() {
     visible: {
       opacity: 1,
       y: 0,
+      transition: {
+        duration: 0.6,
+        ease: [0.4, 0, 0.2, 1],
+      },
     },
   };
 
@@ -41,14 +45,14 @@ export default function ServicesPage() {
               href="/"
               className="inline-flex items-center gap-2 text-neutral-600 hover:text-primary transition-colors mb-8 group"
             >
-              <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+              <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform duration-300 ease-out" />
               <span className="text-sm font-medium">Back to Home</span>
             </Link>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+              transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
             >
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-neutral-900 mb-6 tracking-tight">
                 Our Services
@@ -78,8 +82,8 @@ export default function ServicesPage() {
                   >
                     <motion.div
                       whileHover={{
-                        y: -8,
-                        transition: { duration: 0.2 },
+                        y: -4,
+                        transition: { duration: 0.3, ease: [0.4, 0, 0.2, 1] },
                       }}
                       className={`
                         card-elevated p-8 h-full
@@ -91,7 +95,8 @@ export default function ServicesPage() {
                     >
                       {/* Icon with gradient background */}
                       <div
-                        className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
+                        className={`w-16 h-16 bg-gradient-to-br ${service.gradient} rounded-xl flex items-center justify-center mb-6 group-hover:scale-105 transition-all duration-300`}
+                        style={{ transitionTimingFunction: 'cubic-bezier(0.4, 0, 0.2, 1)' }}
                       >
                         <Icon className="w-9 h-9 text-primary stroke-[2]" />
                       </div>
@@ -112,7 +117,7 @@ export default function ServicesPage() {
                           Learn more
                         </span>
                         <svg
-                          className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
+                          className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300 ease-out"
                           fill="none"
                           viewBox="0 0 24 24"
                           stroke="currentColor"
@@ -139,8 +144,8 @@ export default function ServicesPage() {
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.7, ease: [0.4, 0, 0.2, 1] }}
             >
               <h2 className="text-3xl sm:text-4xl font-bold text-neutral-900 mb-4">
                 Ready to Automate Your Business?

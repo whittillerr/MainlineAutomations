@@ -1,0 +1,41 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Option C: Badge/Emblem with Automation Symbol -->
+  <defs>
+    <linearGradient id="badgeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E63946;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#F4A261;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer circle badge -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#E63946" stroke-width="4"/>
+
+  <!-- Inner circle -->
+  <circle cx="100" cy="100" r="70" fill="url(#badgeGradient)"/>
+
+  <!-- Automation symbol: Three interconnected gears/nodes -->
+  <!-- Top node -->
+  <circle cx="100" cy="70" r="14" fill="none" stroke="#E63946" stroke-width="3"/>
+  <circle cx="100" cy="70" r="6" fill="#E63946"/>
+
+  <!-- Bottom left node -->
+  <circle cx="75" cy="115" r="14" fill="none" stroke="#F4A261" stroke-width="3"/>
+  <circle cx="75" cy="115" r="6" fill="#F4A261"/>
+
+  <!-- Bottom right node -->
+  <circle cx="125" cy="115" r="14" fill="none" stroke="#F4A261" stroke-width="3"/>
+  <circle cx="125" cy="115" r="6" fill="#F4A261"/>
+
+  <!-- Connecting lines showing automation flow -->
+  <line x1="100" y1="84" x2="82" y2="105" stroke="#457B9D" stroke-width="2.5" opacity="0.7"/>
+  <line x1="100" y1="84" x2="118" y2="105" stroke="#457B9D" stroke-width="2.5" opacity="0.7"/>
+  <line x1="85" y1="115" x2="115" y2="115" stroke="#457B9D" stroke-width="2.5" opacity="0.7"/>
+
+  <!-- Small M in the center for branding -->
+  <text x="100" y="100" text-anchor="middle" dominant-baseline="middle"
+        font-family="Arial, sans-serif" font-size="24" font-weight="bold"
+        fill="#E63946" opacity="0.3">M</text>
+
+  <!-- Accent circle in center -->
+  <circle cx="100" cy="100" r="3" fill="#457B9D" opacity="0.6"/>
+</svg>

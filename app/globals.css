@@ -5,6 +5,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* Account for fixed navbar */
     font-feature-settings: "kern" 1, "liga" 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -48,36 +49,51 @@
   /* Reusable button patterns */
   .btn-primary {
     @apply bg-primary hover:bg-primary-dark text-white font-semibold
-           px-6 py-3 rounded-lg transition-all duration-200
-           shadow-button hover:shadow-xl hover:scale-105
+           px-6 py-3 rounded-lg
+           shadow-button hover:shadow-xl
            focus:ring-2 focus:ring-primary focus:ring-offset-2;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px) scale(1.02);
   }
 
   .btn-secondary {
     @apply bg-gold hover:bg-gold-dark text-white font-semibold
-           px-6 py-3 rounded-lg transition-all duration-200
-           shadow-md hover:shadow-lg hover:scale-105;
+           px-6 py-3 rounded-lg
+           shadow-md hover:shadow-lg;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-secondary:hover {
+    transform: translateY(-2px) scale(1.02);
   }
 
   .btn-outline {
     @apply border-2 border-neutral-300 hover:border-primary
            text-neutral-700 hover:text-primary font-semibold
-           px-6 py-3 rounded-lg transition-all duration-200
-           hover:shadow-md;
+           px-6 py-3 rounded-lg hover:shadow-md;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .btn-outline:hover {
+    transform: translateY(-1px);
   }
 
   /* Card patterns */
   .card-elevated {
-    @apply bg-white rounded-xl shadow-md hover:shadow-card-hover
-           transition-all duration-300;
+    @apply bg-white rounded-xl shadow-md hover:shadow-card-hover;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   /* Input patterns */
   .input-field {
     @apply w-full px-4 py-3 border border-neutral-300 rounded-lg
            focus:ring-2 focus:ring-primary focus:border-transparent
-           outline-none transition-all duration-200
+           outline-none
            placeholder:text-neutral-400;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   /* Section patterns */

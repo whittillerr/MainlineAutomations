@@ -51,7 +51,7 @@ export default function Footer() {
                   href="#how-it-works"
                   className="text-neutral-400 hover:text-primary transition-colors inline-flex items-center group"
                 >
-                  <span className="group-hover:translate-x-1 transition-transform">How It Works</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-300 ease-out">How It Works</span>
                 </Link>
               </li>
               <li>
@@ -59,7 +59,7 @@ export default function Footer() {
                   href="/services"
                   className="text-neutral-400 hover:text-primary transition-colors inline-flex items-center group"
                 >
-                  <span className="group-hover:translate-x-1 transition-transform">Services</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-300 ease-out">Services</span>
                 </Link>
               </li>
               <li>
@@ -67,7 +67,7 @@ export default function Footer() {
                   href="#contact"
                   className="text-neutral-400 hover:text-primary transition-colors inline-flex items-center group"
                 >
-                  <span className="group-hover:translate-x-1 transition-transform">Contact</span>
+                  <span className="group-hover:translate-x-1 transition-transform duration-300 ease-out">Contact</span>
                 </Link>
               </li>
             </ul>
@@ -82,7 +82,7 @@ export default function Footer() {
                   href="mailto:whit@mainlineautomations.com"
                   className="text-neutral-400 hover:text-primary transition-colors inline-flex items-center group"
                 >
-                  <svg className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5 mr-2 group-hover:scale-105 transition-all duration-300 ease-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                   <span className="hover:underline">Email Us</span>
@@ -93,7 +93,7 @@ export default function Footer() {
                   href="#contact"
                   className="text-neutral-400 hover:text-gold transition-colors inline-flex items-center group font-medium"
                 >
-                  <svg className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-5 h-5 mr-2 group-hover:scale-105 transition-all duration-300 ease-out" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                   <span className="hover:underline">Book a Call</span>

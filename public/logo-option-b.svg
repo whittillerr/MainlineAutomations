@@ -1,0 +1,47 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Option B: Stylized M Lettermark with Flow -->
+  <defs>
+    <linearGradient id="mGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E63946;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F4A261;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Modern geometric M shape -->
+  <path d="M 50 140 L 50 70 L 100 110 L 150 70 L 150 140"
+        stroke="url(#mGradient)"
+        stroke-width="16"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        fill="none"/>
+
+  <!-- Flow arrows integrated into the M -->
+  <!-- Left arrow -->
+  <path d="M 45 90 L 40 85 L 45 80"
+        stroke="#457B9D"
+        stroke-width="3"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.7"/>
+
+  <!-- Right arrow -->
+  <path d="M 155 90 L 160 85 L 155 80"
+        stroke="#457B9D"
+        stroke-width="3"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.7"/>
+
+  <!-- Center upward arrow for automation/efficiency -->
+  <path d="M 100 105 L 100 115 M 95 110 L 100 105 L 105 110"
+        stroke="#F4A261"
+        stroke-width="3"
+        fill="none"
+        stroke-linecap="round"
+        opacity="0.8"/>
+
+  <!-- Subtle connecting dots -->
+  <circle cx="50" cy="70" r="6" fill="#E63946"/>
+  <circle cx="150" cy="70" r="6" fill="#E63946"/>
+  <circle cx="100" cy="110" r="6" fill="#F4A261"/>
+</svg>
