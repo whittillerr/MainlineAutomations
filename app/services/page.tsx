@@ -14,6 +14,7 @@ export default function ServicesPage() {
       transition: {
         staggerChildren: 0.12,
         delayChildren: 0.15,
+        duration: 0.6,
       },
     },
   };
@@ -23,10 +24,6 @@ export default function ServicesPage() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        duration: 0.6,
-        ease: [0.4, 0, 0.2, 1],
-      },
     },
   };
 
