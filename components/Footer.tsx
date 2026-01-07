@@ -37,7 +37,7 @@ export default function Footer() {
 
             {/* Social proof stat */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-neutral-700/50 rounded-lg border border-neutral-600">
-              <span className="text-gold font-bold text-lg">50+</span>
+              <span className="text-gold font-bold text-lg">10+</span>
               <span className="text-sm text-neutral-400">businesses automated</span>
             </div>
           </div>

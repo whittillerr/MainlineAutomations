@@ -234,7 +234,7 @@ export default function Hero() {
               <div className="flex items-center gap-2">
                 <Users className="w-5 h-5 text-primary" />
                 <span className="text-neutral-600">
-                  <strong className="text-neutral-800 font-semibold">50+</strong> businesses automated
+                  <strong className="text-neutral-800 font-semibold">10+</strong> businesses automated
                 </span>
               </div>
               <div className="hidden sm:block h-8 w-px bg-neutral-300" />
