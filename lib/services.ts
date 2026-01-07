@@ -36,7 +36,7 @@ export const services: Service[] = [
     title: "Instant Lead Response",
     description: "Respond to new leads in under 60 seconds, even when you're on a job. Never lose a customer to slow response times again.",
     gradient: "from-primary/20 to-primary-light/20",
-    longDescription: "In the service industry, speed is everything. Research shows that 78% of customers choose the business that responds first. Our AI-powered lead response system ensures you never miss an opportunity, responding to inquiries in under 60 seconds—24/7, even when you're on a job, after hours, or on weekends.",
+    longDescription: "In the service industry, speed is everything. Research shows that 48% of customers choose the business that responds first. Our AI-powered lead response system ensures you never miss an opportunity, responding to inquiries in under 60 seconds—24/7, even when you're on a job, after hours, or on weekends.",
     howItWorks: [
       {
         step: 1,
@@ -60,7 +60,7 @@ export const services: Service[] = [
       }
     ],
     benefits: [
-      "Capture 78% more leads by being the first to respond",
+      "Capture 48% more leads by being the first to respond",
       "Never lose customers to competitors who respond faster",
       "24/7 availability—nights, weekends, and holidays",
       "Qualify leads automatically before they reach you",
@@ -69,7 +69,7 @@ export const services: Service[] = [
     ],
     stats: [
       { value: "<60 sec", label: "Average response time" },
-      { value: "78%", label: "Lead capture increase" },
+      { value: "48%", label: "Lead capture increase" },
       { value: "24/7", label: "Always available" }
     ],
     example: {
