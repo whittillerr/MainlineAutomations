@@ -173,8 +173,8 @@ export default function ServiceDetailPage() {
                 {service.example.scenario}
               </p>
 
-              <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg border border-neutral-200 max-w-2xl">
-                <div className="space-y-4">
+              <div className="bg-gradient-to-b from-neutral-50 to-white p-6 sm:p-8 rounded-2xl shadow-lg border border-neutral-200 max-w-2xl">
+                <div className="space-y-3">
                   {service.example.conversation.map((message, index) => (
                     <div
                       key={index}
@@ -183,14 +183,14 @@ export default function ServiceDetailPage() {
                       }`}
                     >
                       <div
-                        className={`max-w-[80%] ${
+                        className={`max-w-[75%] ${
                           message.role === "ai"
-                            ? "bg-primary text-white"
-                            : "bg-neutral-100 text-neutral-900"
+                            ? "bg-blue-500 text-white shadow-md"
+                            : "bg-white text-neutral-900 border border-neutral-200 shadow-sm"
                         } px-4 py-3 rounded-2xl ${
                           message.role === "ai"
-                            ? "rounded-tr-sm"
-                            : "rounded-tl-sm"
+                            ? "rounded-tr-md"
+                            : "rounded-tl-md"
                         }`}
                       >
                         <p className="text-sm sm:text-base leading-relaxed">
@@ -200,7 +200,7 @@ export default function ServiceDetailPage() {
                           <p
                             className={`text-xs mt-2 ${
                               message.role === "ai"
-                                ? "text-white/70"
+                                ? "text-white/80"
                                 : "text-neutral-500"
                             }`}
                           >
