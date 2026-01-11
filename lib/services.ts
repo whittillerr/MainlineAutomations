@@ -283,7 +283,7 @@ export const services: Service[] = [
     ],
     stats: [
       { value: "6-10+", label: "Reviews per month" },
-      { value: "48%", label: "Response rate" },
+      { value: "48%", label: "Higher response rate" },
       { value: "4.9/5", label: "Average rating" }
     ],
     example: {
