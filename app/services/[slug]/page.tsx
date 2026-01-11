@@ -193,7 +193,9 @@ export default function ServiceDetailPage() {
                             : "rounded-tl-md"
                         }`}
                       >
-                        <p className="text-sm sm:text-base leading-relaxed">
+                        <p className={`text-sm sm:text-base leading-relaxed ${
+                          message.role === "ai" ? "text-white" : "text-neutral-900"
+                        }`}>
                           {message.message}
                         </p>
                         {message.time && (
